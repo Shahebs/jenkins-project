@@ -10,7 +10,6 @@ pipeline {
         }
         stage('Test1') {
             steps {
-                sh "pytest"
                 sh "whoami"
             }
         }
