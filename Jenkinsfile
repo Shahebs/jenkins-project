@@ -8,12 +8,7 @@ pipeline {
                 sh "ls -ltr"
             }
         }
-        stage('Setup') {
-            steps {
-                sh "pip install -r requirements.txt"
-            }
-        }
-        stage('Test') {
+        stage('Test1') {
             steps {
                 sh "pytest"
                 sh "whoami"
